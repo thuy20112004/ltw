@@ -1,0 +1,155 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #dadada;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  background: white;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Search bar */
+.search {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.search input {
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.search i {
+  color: #333;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+/* Product list styling */
+.Product {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Product:hover {
+  background-color: #f0f0f0;
+}
+
+.Product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.Product .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .search {
+    font-size: 0.9rem;
+  }
+
+  .Product {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .Product img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+  }
+
+  .search {
+    font-size: 0.85rem;
+    padding: 5px;
+  }
+
+  .search input {
+    padding: 5px;
+    font-size: 0.85rem;
+  }
+
+  .search i {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .Product {
+    padding: 8px 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Product img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Product .info {
+    padding-left: 10px;
+  }
+}
