@@ -1,0 +1,92 @@
+body {
+  padding: 20px;
+}
+
+.container {
+  padding: 15px;
+  max-width: 100%;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%; /* Full width for mobile */
+  box-sizing: border-box;
+}
+
+.container button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%; /* Full width for easier tapping on mobile */
+}
+
+.container span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container button:hover {
+  background-color: rgb(50, 50, 208);
+}
+
+.error {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media (min-width: 576px) {
+  /* Tablet and up */
+  body {
+    padding: 40px;
+  }
+
+  .container {
+    padding: 20px 40px;
+  }
+
+  .container input {
+    width: 60%; /* Wider input for tablets */
+  }
+
+  .container button {
+    width: auto; /* Keep the button at original width */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Desktop and up */
+  body {
+    padding: 100px 300px;
+  }
+
+  .container {
+    padding: 20px 50px;
+  }
+
+  .container input {
+    width: 30%; /* Original width for desktop */
+  }
+
+  .container button {
+    padding: 8px 110px; /* Original padding for desktop */
+  }
+}

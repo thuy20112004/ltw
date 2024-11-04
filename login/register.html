@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="frmregister" class="container">
+      <h2>Đăng ký tài khoản</h2>
+
+      <div class="cl-name">
+        <label for="">Họ và tên</label> <br />
+        <input type="text" placeholder="Nhập họ và tên" id="userName" />
+        <p id="nameError" class="error" style="display: none">
+          Tên không được để trống
+        </p>
+      </div>
+      <div class="cl-email">
+        <label>Email</label> <br />
+        <input type="text" placeholder="Nhập Email" id="email" />
+        <p id="emailError" class="error" style="display: none">
+          Email không được để trống
+        </p>
+      </div>
+      <div class="cl-password">
+        <label>Mật khẩu</label> <br />
+        <input type="text" placeholder="Nhập mật khẩu" id="password" />
+        <p id="passwordError" class="error" style="display: none">
+          Mật khẩu không được để trống
+        </p>
+      </div>
+      <div class="">
+        <label>Nhập lại mật khẩu</label> <br />
+        <input type="text" placeholder="Nhập lại mật khẩu" id="repassword" />
+        <p id="repasswordError" class="error" style="display: none">
+          Mật khẩu không được để trống
+        </p>
+      </div>
+      <div>
+        <button type="submit">Đăng ký</button>
+      </div>
+      <span>
+        <p>Bạn đã đăng ký tài khoản chưa?</p>
+        <a href="./login.html">Đăng nhập</a>
+      </span>
+    </form>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uuid@9.0.1/dist/index.min.js"></script> -->
+    <script src="./register.js"></script>
+  </body>
+</html>
